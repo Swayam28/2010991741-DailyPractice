@@ -1,0 +1,18 @@
+body {
+    background: linear-gradient(
+        to top,
+         rgb(204, 229, 255),
+          rgba(202, 229, 255, 0.4)
+          );
+          font-size: 1.15em;
+          text-align: justify;
+}
+h1{
+    color:blue;
+}
+#mytitle{
+color: red;
+}
+.h1element{
+    color: green;
+}
