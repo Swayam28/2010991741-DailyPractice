@@ -1,0 +1,10 @@
+table,td,th{
+    border:2px solid red;
+    padding: 1%;
+    border-spacing: 1%;
+    text-align: center;
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+}
