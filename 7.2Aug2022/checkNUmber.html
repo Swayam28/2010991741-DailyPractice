@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fnClick(){
+            var n1=document.getElementById("n1").value;
+            var n2=document.getElementById("n2").value;
+
+           if(!isNaN(n1) && !isNaN(n2)){
+            n1=Number(n1);
+            n2=Number(n2);
+        document.getElementById("p1").innerHTML=n1+n2;
+           }
+           else{
+            document.getElementById("p1").innerHTML="<span style='color:red'>Please enter numeric value.</span>";
+           }
+        }
+    </script>
+</head>
+<body>
+    N1<input type="text" name="n1" id="n1"/><br>
+    N2<input type="text" name="n2" id="n2"/><br>
+    <button onclick="fnClick()">Click Here</button>
+    <p id="p1"></p>
+    
+</body>
+</html>

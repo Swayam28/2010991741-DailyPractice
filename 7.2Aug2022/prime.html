@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fnClick(){
+           let n1=document.getElementById("n1").value;
+
+          let flag=true;
+          for(let i=2;i<n1;i++){
+            if(n1%i==0){
+                flag=false;
+                break;
+            }
+        }
+            if(flag==true){
+                document.getElementById("p1").innerHTML="Prime";
+            }
+            else{
+                document.getElementById("p1").innerHTML="Not Prime";
+            }
+
+          
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="n1" id="n1"/>
+    <button onclick="fnClick()">Click Here</button>
+    <p id="p1"></p>
+    
+</body>
+</html>
