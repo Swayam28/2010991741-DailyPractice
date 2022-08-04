@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fnClick() {
+            let n1 = document.getElementById("l").value;
+            let n2 = document.getElementById("r").value;
+            let n3 = document.getElementById("k").value;
+            
+            if (n2 < n1) {
+                alert(" r should be greater than l");
+            }
+            else {
+                var count = 0;
+                for (var i = n1; i < n2; i++) {
+                    if (i%n3==0){
+                        count++;
+                    }
+            }
+            document.getElementById("p1").innerHTML ="total count of numbers divisble by k are "+count;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    l<input type="number" name="l" id="l" placeholder="l"><br>
+    r<input type="number" name="r" id="r" placeholder="r"><br>
+    k<input type="number" name="k" id="k" placeholder="k"><br>
+    <button onclick="fnClick()">Click here</button>
+    <p id="p1"></p>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #sq{
+            background-color:wheat;
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+            margin-left: 30%;
+            border-radius: 0;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-delay: 2ms;
+
+
+        }
+    </style>
+    <script>
+        function fnClick(){
+            
+            document.getElementById("sq").style.borderRadius=50+"%";
+        }
+    </script>
+</head>
+<body>
+    
+    <button onclick="fnClick()">Click here</button>
+    <p id="sq"></p>
+    
+</body>
+</html>
