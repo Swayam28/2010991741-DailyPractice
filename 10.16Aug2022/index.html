@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <script>
+        function check(myform){
+            if(myform.myName.value=="" || myform.myName.value==null){
+                alert("Name is mandatory");
+                return false;
+            }
+
+            if(myform.myPhone.value=="" || myform.myPhone.value==null){
+                alert("Phone is mandatory");
+                return false;
+            }else{
+                return true;
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+    <form 
+    name="formValid"
+    action="formprocess.html"
+    method="get"
+    onsubmit="return check(formValid)"
+    >
+    <p>Name :</p>
+    <input type="text" name="myName" >
+    <br>
+    <p>Phone No. :</p>
+    <input type="text" name="muPhone" >
+    <br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
