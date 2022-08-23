@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="n1" id="n1" placeholder="Enter a number">
+    <button  onclick="myfn()">Click Here</button>
+    <p id="err"></p>
+    <p id="demo"></p>
+    <script>
+        function myfn() {
+            let a=0;
+            function myfn2() {
+                a = document.getElementById("n1").value;
+                if (!isNaN(a)) {
+                    a = Number(a);
+                    if (a < 18) {
+                        throw "Its too low";
+
+                    }
+                    if (a > 60) {
+                        throw "Its too high";
+
+                    }
+                    else{
+                        alert("Number is valid");
+                    }
+                }
+                else {
+                    throw "Its not a number";
+                }
+            }
+            try{
+                myfn2();
+            }
+            catch(err){
+                document.getElementById("err").innerHTML=err;
+            document.getElementById("demo").innerHTML=a;
+            }
+           
+        }
+    </script>
+</body>
+
+</html>
